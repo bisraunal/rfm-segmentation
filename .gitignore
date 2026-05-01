@@ -1,0 +1,37 @@
+# ─── Python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ─── Sanal Ortamlar ───────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── IDE / Editör ─────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Veri Dosyaları (büyük, yeniden üretilebilir) ───
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+# ─── Üretilen Çıktılar ────────────────────────
+assets/*.png
+
+# ─── Streamlit ────────────────────────────────
+.streamlit/secrets.toml
+
+# ─── Loglar ───────────────────────────────────
+*.log
