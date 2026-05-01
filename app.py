@@ -691,7 +691,7 @@ def render_elbow():
     if not ELBOW_IMAGE.exists():
         return
     section("06", "Optimum K Tespiti", "Elbow ve Silhouette analiz çıktıları")
-    st.image(str(ELBOW_IMAGE), use_column_width=True)
+    st.image(str(ELBOW_IMAGE), use_container_width=True)
 
 
 # ─────────────────────────────────────────────

@@ -5,12 +5,15 @@ Monetary metrikleri üzerinden davranışsal segmentlere ayıran uçtan uca bir 
 bilimi projesi. Online Retail II veri seti üzerinde 5.800+ müşteriyi analiz eder
 ve sonuçları interaktif bir Streamlit panelinde sunar.
 
+![Dashboard Overview](screenshots/01-overview.png)
+
 ---
 
 ## İçindekiler
 
 - [Genel Bakış](#genel-bakış)
 - [RFM Analizi Nedir?](#rfm-analizi-nedir)
+- [Dashboard](#dashboard)
 - [Proje Yapısı](#proje-yapısı)
 - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
 - [Kurulum](#kurulum)
@@ -56,6 +59,36 @@ Bu üç metrik bir araya getirildiğinde müşteriler aşağıdaki gibi gruplara
 
 ---
 
+## Dashboard
+
+Streamlit ile geliştirilmiş interaktif panel, analizin tüm aşamalarını altı bölümde sunar.
+
+### Müşteri Veritabanı
+
+Tüm müşterilerin RFM metrikleri ile birlikte aranabilir, sıralanabilir tablo. Monetary ve Recency sütunları kademeli renklendirme ile vurgulanır.
+
+![Müşteri Veritabanı](screenshots/02-data-table.png)
+
+### Üç Boyutlu Küme Haritası
+
+Plotly ile geliştirilmiş etkileşimli 3 boyutlu scatter plot. Eksenler Recency, Frequency ve Monetary; noktalar segmentlere göre renklendirilmiştir.
+
+![3D Küme Haritası](screenshots/03-cluster-3d.png)
+
+### Müşteri Dağılımı
+
+Segmentlerin müşteri sayısı bazında pazar payı dağılımı.
+
+![Müşteri Dağılımı](screenshots/04-distribution.png)
+
+### Optimum K Tespiti
+
+Elbow ve Silhouette analizleri ile küme sayısının veriye göre belirlenmesi.
+
+![Elbow Analizi](screenshots/05-elbow-analysis.png)
+
+---
+
 ## Proje Yapısı
 
 ```
@@ -69,6 +102,7 @@ rfm_project/
 ├── assets/
 │   └── elbow_plot.png            # Elbow ve Silhouette analizi
 │
+├── screenshots/                  # README görselleri
 ├── preprocessing.py              # Adım 1-2: Temizleme + RFM
 ├── clustering.py                 # Adım 3: K-Means + değerlendirme
 ├── app.py                        # Adım 4: Streamlit Dashboard
@@ -96,7 +130,7 @@ rfm_project/
 ### 1. Depoyu klonlayın
 
 ```bash
-git clone https://github.com/kullanici-adi/rfm-segmentation.git
+git clone https://github.com/bisraunal/rfm-segmentation.git
 cd rfm-segmentation
 ```
 
