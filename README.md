@@ -26,7 +26,7 @@ ve sonuçları interaktif bir Streamlit panelinde sunar.
 
 ## Genel Bakış
 
-Bu proje, ham fatura kayıtlarından başlayarak iş açısından anlamlı müşteri
+ Bu proje, ham fatura kayıtlarından başlayarak iş açısından anlamlı müşteri
 segmentlerine ulaşan tam bir analitik boru hattı sunar. Pipeline üç ana aşamadan
 oluşur:
 
