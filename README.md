@@ -1,6 +1,6 @@
 # RFM Müşteri Segmentasyon Analizi
 
-K-Means kümeleme algoritması ile e-ticaret müşterilerini Recency, Frequency ve
+ K-Means kümeleme algoritması ile e-ticaret müşterilerini Recency, Frequency ve
 Monetary metrikleri üzerinden davranışsal segmentlere ayıran uçtan uca bir veri
 bilimi projesi. Online Retail II veri seti üzerinde 5.800+ müşteriyi analiz eder
 ve sonuçları interaktif bir Streamlit panelinde sunar.
