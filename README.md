@@ -61,7 +61,7 @@ Bu üç metrik bir araya getirildiğinde müşteriler aşağıdaki gibi gruplara
 
 ## Dashboard
 
-Streamlit ile geliştirilmiş interaktif panel, analizin tüm aşamalarını altı bölümde sunar.
+ Streamlit ile geliştirilmiş interaktif panel, analizin tüm aşamalarını altı bölümde sunar.
 
 ### Müşteri Veritabanı
 
